@@ -87,7 +87,7 @@ main{
 
 h1, h2, h3, h4, h5, h6, a, p{
     color: hsl(0, 0%, 0%);
-}
+}s
 
 h1, h2, h3, h4 {
     font-family: "Roboto";
@@ -97,7 +97,7 @@ h5, h6 {
     font-family: "Roboto Condensed";
 }
 
-a, td, p, button, span{
+a, td, p, button, span, li{
     font-family: "Roboto";
     text-decoration: none;
 }
@@ -115,6 +115,139 @@ img {
 /*====================
 ========Header=========
 ======================*/
+
+
+.cabecera-superior{
+    padding: 0.5rem 5%;
+    width: 90%;
+}
+
+.cabecera-superior-noticias-destacadas{
+    width: 85%;
+}
+
+.cabecera-superior-noticias-destacadas ul{
+
+    justify-content: space-evenly;
+    display: flex;  
+}
+
+.cabecera-superior-noticias-destacadas ul li{
+    font-size: 0.8rem;
+}
+
+.cabecera-superior-noticias-destacadas ul li:not(:first-child):not(:last-child)::after {
+    padding-left: 0.25rem;
+    content: "-";
+}
+
+.cabecera-superior-noticias-destacadas ul li:first-child{
+    color:red;
+    font-weight: 600;
+}
+
+.cabecera-superior-islas li:not(:first-child):not(:last-child)::after {
+
+padding-left:0.25rem;
+content:"|";
+
+
+
+    
+}
+
+
+
+.cabecera-superior-islas ul{
+
+
+    display:flex;
+    justify-content:space-evenly;;
+    font-weight: 400;
+
+}
+
+
+.cabecera-superior{
+
+height:1em;
+background-color:#E6E6E6;
+
+
+}
+
+
+.cabecera-principal{
+
+    height: 6em;
+    background-color:#CD0000 ;
+    justify-content: space-evenly;
+}
+
+
+.cabecera-principal-boton-menu{
+
+        margin-left:2em;
+        margin-top:1.2em;
+        width:3.5em;
+        color:white;
+
+}
+
+.cabecera-principal-logo svg{
+
+    margin-top:1em;
+
+}
+
+.cabecera-principal-logo svg path{
+    fill:hsl(0, 0%, 99%);
+}
+
+
+.cabecera-principal-usuarios{
+
+    justify-content: ;
+    display:flex;
+    margin-top: 2em;
+}
+
+
+.cabecera-principal-usuarios-login svg{
+
+    width:2em;
+    
+
+}
+
+.cabecera-menu ul{
+
+     display:flex;
+     justify-content:space-evenly;
+     background-color:#E6E6E6;
+   
+}
+
+.cabecera-principal-usuarios-login{
+
+   
+
+
+
+}
+
+.cabecera-principal-usuarios-registro{
+
+
+
+
+
+
+}
+
+
+
+
 
 
 
