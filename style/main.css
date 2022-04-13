@@ -93,13 +93,14 @@ h1, h2, h3, h4 {
     font-family: "Roboto";
 }
 
-h5, h6 {
+h5, h6, span {
     font-family: "Roboto Condensed";
 }
 
 a, td, p, button, span, li{
     font-family: "Roboto";
     text-decoration: none;
+
 }
 
 
@@ -116,8 +117,8 @@ img {
 ========Header=========
 ======================*/
 
-
 .cabecera-superior{
+    background-color:#E6E6E6;
     padding: 0.5rem 5%;
     width: 90%;
 }
@@ -127,7 +128,6 @@ img {
 }
 
 .cabecera-superior-noticias-destacadas ul{
-
     justify-content: space-evenly;
     display: flex;  
 }
@@ -146,108 +146,171 @@ img {
     font-weight: 600;
 }
 
-.cabecera-superior-islas li:not(:first-child):not(:last-child)::after {
-
-padding-left:0.25rem;
-content:"|";
-
-
-
-    
+.cabecera-superior-islas{
+    margin-left: 45%;
+    width: 55%;
 }
 
-
-
-.cabecera-superior-islas ul{
-
-
+.cabecera-superior-islas ul{   
     display:flex;
-    justify-content:space-evenly;;
-    font-weight: 400;
-
+    justify-content:space-between;
 }
 
-
-.cabecera-superior{
-
-height:1em;
-background-color:#E6E6E6;
-
-
+.cabecera-superior-islas ul li{   
+    font-size: 0.8rem;
 }
 
+.cabecera-superior-islas ul li:not(:last-child)::after {
+    content: "|";
+    padding-left: 0.5rem;
+    color: #aaa;
+    font-weight: bold;
+}
 
 .cabecera-principal{
-
-    height: 6em;
     background-color:#CD0000 ;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    width: 90%;
 }
 
 
-.cabecera-principal-boton-menu{
+.cabecera-principal-boton-menu svg{
+    width:3.5em;
+}
 
-        margin-left:2em;
-        margin-top:1.2em;
-        width:3.5em;
-        color:white;
-
+.cabecera-principal-boton-menu svg path{
+    fill:hsl(0, 0%, 100%);
 }
 
 .cabecera-principal-logo svg{
-
-    margin-top:1em;
-
+    width: 20rem;
 }
 
 .cabecera-principal-logo svg path{
     fill:hsl(0, 0%, 99%);
 }
 
-
 .cabecera-principal-usuarios{
-
-    justify-content: ;
+    justify-content: space-between;
     display:flex;
-    margin-top: 2em;
-}
-
-
-.cabecera-principal-usuarios-login svg{
-
-    width:2em;
+    margin-left: auto;
+    width: 70%;
     
 
 }
 
+.cabecera-principal-usuarios-login svg{
+    vertical-align: middle;
+    width: 1.2rem;
+   
+}
+
+
+
+.cabecera-principal-usuarios-registro button{
+    border: none;
+    background-color:#FFC700;
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    font-style: italic;
+    
+}
+
+
+.cabecera-principal-usuarios-registro button{
+    border-radius: 0.2rem;
+}
+
+.cabecera-menu {
+    background-color:#E6E6E6;
+    padding: 0.5rem 5%;
+    width: 90%;
+}
+
 .cabecera-menu ul{
-
-     display:flex;
-     justify-content:space-evenly;
-     background-color:#E6E6E6;
-   
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.cabecera-principal-usuarios-login{
-
-   
-
-
-
-}
-
-.cabecera-principal-usuarios-registro{
-
-
-
-
-
-
+.cabecera-menu ul li{
+    font-family: "Roboto Condensed";
+    font-weight: 600;
 }
 
 
+.ad{
+    text-align: center;
+    margin-top:1em;
+    }
+
+main{
+
+    width: 90%;
+    padding: 0 5%;
+
+   }
 
 
+
+.news{
+
+padding:2%;
+
+}
+
+.news-category{
+
+color:red;
+}
+
+.news-related ul li{
+
+list-style:square;
+color:red;
+list-style-position: inside;
+
+}
+
+
+.new a{
+
+    list-style:square;
+    color:red;
+    list-style-position: inside;
+    color:#E6E6E6;
+  
+}
+
+.news-title{
+
+    padding: 5px 1px;
+    
+}
+
+.news-author{
+
+    padding:5px 1px;
+
+}
+
+.news-related  ul li{
+
+    padding:8px 2px; 
+
+}
+
+.news-title  :hover{
+
+    color: #CD0000;
+}
+
+.news-related :hover{
+
+     color:#CD0000;
+
+}
 
 
 
@@ -260,4 +323,3 @@ background-color:#E6E6E6;
 /*====================
 ========News==========
 ======================*/
-    
